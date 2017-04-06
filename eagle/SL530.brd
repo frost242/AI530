@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26,16 +26,16 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -164,8 +164,8 @@
 <text x="23.2918" y="20.5232" size="0.6096" layer="25" rot="R180">TDI</text>
 <text x="21.0058" y="20.4724" size="0.6096" layer="25" rot="R180">TMS</text>
 <text x="28.3718" y="20.5232" size="0.6096" layer="25" rot="R180">TCK</text>
-<text x="6.6294" y="2.3876" size="1.778" layer="25" rot="R90">TerribleFire 530 "Accelerator"
-(C) 2016 S.J Leary</text>
+<text x="5.6642" y="2.4892" size="1.4224" layer="25" rot="R90">AwesomeInferno 530 "Accelerator"
+https://github.com/AwesomeInferno/AI530</text>
 <text x="66.9798" y="96.9264" size="1.778" layer="25">Revision 2</text>
 <text x="73.406" y="75.2094" size="0.8128" layer="125" ratio="18" rot="R180">C1</text>
 <text x="87.7824" y="68.7578" size="0.8128" layer="125" ratio="18">C2</text>
@@ -266,6 +266,20 @@ GNU Public License (GPL) v2</text>
 <text x="96.7994" y="94.0816" size="0.6096" layer="25" rot="R180">GND</text>
 <text x="98.9076" y="94.0816" size="0.6096" layer="25" rot="R180">3V3</text>
 <text x="96.5454" y="82.4738" size="0.6096" layer="25" rot="R180">PIN1</text>
+<wire x1="72.4662" y1="86.7664" x2="78.9686" y2="93.2688" width="0.254" layer="21"/>
+<wire x1="78.9686" y1="93.2688" x2="85.471" y2="86.7664" width="0.254" layer="21"/>
+<wire x1="85.471" y1="86.7664" x2="85.471" y2="86.6902" width="0.127" layer="21"/>
+<wire x1="85.471" y1="86.6902" x2="78.9686" y2="80.1878" width="0.254" layer="21"/>
+<wire x1="78.9686" y1="80.1878" x2="72.4154" y2="86.741" width="0.254" layer="21"/>
+<circle x="84.455" y="86.741" radius="0.297296875" width="0.127" layer="21"/>
+<circle x="54.864" y="15.8496" radius="0.297296875" width="0.127" layer="21"/>
+<wire x1="42.8498" y1="15.9004" x2="42.9006" y2="15.9004" width="0.127" layer="21"/>
+<wire x1="42.9006" y1="15.9004" x2="49.3522" y2="22.3012" width="0.254" layer="21"/>
+<wire x1="49.3522" y1="22.3012" x2="55.9308" y2="15.7226" width="0.254" layer="21"/>
+<wire x1="55.9308" y1="15.7226" x2="55.88" y2="15.7226" width="0.127" layer="21"/>
+<wire x1="55.88" y1="15.7226" x2="49.4792" y2="9.3218" width="0.254" layer="21"/>
+<wire x1="49.4792" y1="9.3218" x2="49.4284" y2="9.3218" width="0.127" layer="21"/>
+<wire x1="49.4284" y1="9.3218" x2="42.9006" y2="15.8496" width="0.254" layer="21"/>
 </plain>
 <libraries>
 <library name="micro-mc68000">
@@ -3338,7 +3352,7 @@ Source: http://us.st.com/stonline/products/literature/ds/7995.pdf</description>
 <wire x1="18.173" y1="95.3826" x2="19.4874" y2="95.3826" width="0.2032" layer="1"/>
 <wire x1="68.8848" y1="96.8756" x2="74.0865" y2="96.8756" width="0.2032" layer="1"/>
 <wire x1="74.0865" y1="96.8756" x2="77.7057625" y2="93.2563375" width="0.2032" layer="1"/>
-<wire x1="50.615034375" y1="9.308859375" x2="48.0822" y2="6.776025" width="0.2032" layer="1"/>
+<wire x1="50.615034375" y1="9.308859375" x2="48.0822" y2="6.776025" width="0.2032" layer="16"/>
 <wire x1="1.2446" y1="54.3306" x2="1.2446" y2="89.1794" width="0.2032" layer="1"/>
 <wire x1="1.2446" y1="89.1794" x2="1.3716" y2="89.3064" width="0.2032" layer="1"/>
 <wire x1="1.3716" y1="89.3064" x2="1.3716" y2="93.8276" width="0.2032" layer="1"/>
@@ -3346,6 +3360,7 @@ Source: http://us.st.com/stonline/products/literature/ds/7995.pdf</description>
 <wire x1="1.2192" y1="93.98" x2="1.2192" y2="95.3262" width="0.2032" layer="1"/>
 <wire x1="1.2192" y1="95.3262" x2="1.2446" y2="95.3516" width="0.2032" layer="1"/>
 <wire x1="1.2446" y1="54.3306" x2="7.9248" y2="47.6504" width="0.2032" layer="1"/>
+<via x="48.0822" y="6.776025" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="A19">
 <contactref element="X1" pad="47"/>
@@ -3700,14 +3715,16 @@ Source: http://us.st.com/stonline/products/literature/ds/7995.pdf</description>
 <wire x1="45.311734375" y1="12.1372875" x2="47.169846875" y2="13.9954" width="0.2032" layer="1"/>
 <wire x1="47.169846875" y1="13.9954" x2="48.7172" y2="13.9954" width="0.2032" layer="1"/>
 <wire x1="48.7172" y1="13.9954" x2="49.3014" y2="13.4112" width="0.2032" layer="1"/>
-<wire x1="49.3014" y1="13.4112" x2="49.3014" y2="9.0424" width="0.2032" layer="1"/>
-<wire x1="49.3014" y1="9.0424" x2="46.9138" y2="6.6548" width="0.2032" layer="1"/>
+<wire x1="49.3014" y1="13.4112" x2="49.3014" y2="9.0424" width="0.2032" layer="16"/>
+<wire x1="49.3014" y1="9.0424" x2="46.9138" y2="6.6548" width="0.2032" layer="16"/>
 <wire x1="46.9138" y1="6.6548" x2="46.9138" y2="3.2258" width="0.2032" layer="1"/>
 <wire x1="46.9138" y1="3.2258" x2="46.1518" y2="2.4638" width="0.2032" layer="1"/>
 <wire x1="46.1518" y1="2.4638" x2="33.909" y2="2.4638" width="0.2032" layer="1"/>
 <wire x1="33.909" y1="2.4638" x2="32.9184" y2="3.4544" width="0.2032" layer="1"/>
 <wire x1="32.9184" y1="3.4544" x2="32.9184" y2="4.3434" width="0.2032" layer="1"/>
 <wire x1="32.9184" y1="4.3434" x2="32.8422" y2="4.4196" width="0.2032" layer="1"/>
+<via x="49.3014" y="13.4112" extent="1-16" drill="0.6" shape="square"/>
+<via x="46.9138" y="6.6548" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="A13">
 <contactref element="X1" pad="41"/>
@@ -6119,7 +6136,7 @@ Source: http://us.st.com/stonline/products/literature/ds/7995.pdf</description>
 <wire x1="55.86566875" y1="11.8364" x2="68.3768" y2="11.8364" width="0.2032" layer="1"/>
 <wire x1="68.3768" y1="11.8364" x2="68.3768" y2="9.2202" width="0.2032" layer="1"/>
 <contactref element="XC9572XL(BUS)" pad="60"/>
-<wire x1="55.86566875" y1="11.8364" x2="54.504121875" y2="13.197946875" width="0.2032" layer="1"/>
+<wire x1="55.86566875" y1="11.8364" x2="54.504121875" y2="13.197946875" width="0.2032" layer="16"/>
 <wire x1="97.1804" y1="14.7828" x2="98.3488" y2="15.9004" width="0.2032" layer="16"/>
 <wire x1="98.3488" y1="15.9004" x2="98.3488" y2="81.6864" width="0.2032" layer="16"/>
 <wire x1="98.3488" y1="81.6864" x2="94.6912" y2="85.2932" width="0.2032" layer="16"/>
@@ -6137,6 +6154,7 @@ Source: http://us.st.com/stonline/products/literature/ds/7995.pdf</description>
 <wire x1="84.6328" y1="12.6746" x2="85.8774" y2="11.43" width="0.2032" layer="1"/>
 <wire x1="85.8774" y1="11.43" x2="88.6206" y2="11.43" width="0.2032" layer="1"/>
 <wire x1="88.6206" y1="11.43" x2="90.3986" y2="13.208" width="0.2032" layer="1"/>
+<via x="55.86566875" y="11.8364" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="IDECS0">
 <contactref element="IDE" pad="37"/>
@@ -6575,13 +6593,14 @@ Source: http://us.st.com/stonline/products/literature/ds/7995.pdf</description>
 <signal name="AUX0">
 <contactref element="XC9572XL(BUS)" pad="58"/>
 <contactref element="AUXPINS" pad="1"/>
-<wire x1="53.797015625" y1="12.490840625" x2="55.39125625" y2="10.8966" width="0.2032" layer="1"/>
+<wire x1="53.797015625" y1="12.490840625" x2="55.39125625" y2="10.8966" width="0.2032" layer="16"/>
 <wire x1="55.39125625" y1="10.8966" x2="67.564" y2="10.8966" width="0.2032" layer="1"/>
 <wire x1="67.564" y1="10.8966" x2="67.564" y2="8.4328" width="0.2032" layer="1"/>
 <wire x1="67.564" y1="8.4328" x2="68.5038" y2="7.4676" width="0.2032" layer="1"/>
 <wire x1="68.5038" y1="7.4676" x2="81.2292" y2="7.4676" width="0.2032" layer="1"/>
 <wire x1="81.2292" y1="7.4676" x2="83.6168" y2="9.8552" width="0.2032" layer="1"/>
 <wire x1="83.6168" y1="9.8552" x2="83.6168" y2="10.3886" width="0.2032" layer="1"/>
+<via x="55.39125625" y="10.8966" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="AUX1">
 <contactref element="XC9572XL(BUS)" pad="57"/>

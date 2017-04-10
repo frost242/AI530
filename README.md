@@ -1,8 +1,10 @@
-# TF530
+# AI530
 
-** WARNING THIS IS BETA AT THE MOMENT
+** WARNING THIS IS EXPERIMENTAL
 
-This repository contains all the files needed to produce a copy of my accelerator board.
+This repository is a fork of the [TerribleFire TF530](https://github.com/terriblefire/tf530) accelerator project.
+
+This repository contains all the files needed to produce a copy of the accelerator board.
 
 The CPLD Required is a XC9572XL-10VQ64
 
@@ -10,31 +12,32 @@ Everything in this repository is released under the GNU GPLv2. You may create or
 
 ## Firmware / Requirements
 
-  * Xilinx ISE, 14.7 (the final version - other versions may work but this is the one I support)
+  * Xilinx ISE, 14.7
   * JTAG Adaptor
+  * 
 
-[For more information visit my channel](https://www.youtube.com/c/TerribleFire)
+[For more information visit the EAB forum thread](http://eab.abime.net/showthread.php?t=85380)
 
 ##License
 
 This project and all the files contained are released under the GNU GPLv2. If you build a modified version of the board you must supply the end user with all the sources (this can be a web link).
 
-##The TerribleFire 530 board (Revision 2)
+##The AwesomeInferno 530 board (Revision 2)
 
-This board is now in Beta. It may not work in all circumstances but it has been verified to boot AmigaOS 1.3, 2.05 and 3.1 and run various games and desktop apps at 25Mhz. Operation is not guarunteed to be crash free but will work in most "happy path" situations.
+This board is in Beta. It may not work in all circumstances but it has been verified to boot AmigaOS 1.3, 2.05 and 3.1 and run various games and desktop apps at 25Mhz. Operation is not guarunteed to be crash free but will work in most "happy path" situations.
 
-I have only verified the HD interface with Compact Flash cards.
-I have verified this board boots on Amiga 500 Rev 5, 6a, 8.1a
+The HD interface has only been verified with Compact Flash cards.
+The board has been verified booting on Amiga 500 Rev 5, 6a, 8.1a
 
-(DirtyPCBs link removed as the link is now dead)
+(DirtyPCBs link removed as the link is now dead.)
 
-I accept no responsibiltiy for any damage to any equipment that results from the use of this board. IT IS ENTIRELY AT YOUR OWN RISK!
+No responsibility for any damage to any equipment that results from the use or construction of this board will be accepted. IT IS ENTIRELY AT YOUR OWN RISK!
 
 ## Installation
 
-Installation is exactly the same as the Kipper2k A508. Refer to http://www.kipper2k.com/a500fastmem.html
+You need to connect the OVR and INT2 signals to the A500 header port as per the diagram below:
 
-You need to connect the OVR and INT2 signals to the A500 header port. 
+![INT2/OVR Pin Hookup](docs/A500_Pin_Hookup.jpg)
 
 ## What does the board look like
 
@@ -46,8 +49,8 @@ You need to connect the OVR and INT2 signals to the A500 header port.
 
 | Qty | Value           | Device             | Package              | Parts                                                  | Description                   | 
 |-----|-----------------|--------------------|----------------------|--------------------------------------------------------|-------------------------------|
-| 1   |                 | MC68030RC          | MPGA128              | IC1                                                    | 68xxx PROCESSOR               | 
-| 1   |                 | MC68881FN-SOC      | PLCC68-S             | IC2                                                    | 68xxx PROCESSOR               |
+| 1   |                 | MC68030RC          | MPGA128              | IC1                                                    | 68030 PROCESSOR               | 
+| 1   |                 | MC68881/2FN-SOC      | PLCC68-S             | IC2                                                    | 6888x CO-PROCESSOR               |
 | 1   | 10K             | RESISTOR1206       | 1206                 | R3                                                     | Resistors                     |
 | 13  | 10uF            | CAP_CERAMIC1206    | 1206                 | C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13 | Ceramic Capacitors            | 
 | 2   | 47K             | RESISTOR1206       | 1206                 | R1, R2                                                 | Resistors                     | 
@@ -66,5 +69,5 @@ You need to connect the OVR and INT2 signals to the A500 header port.
 | 1   | MC68000         | MC68000P           | DIL64                | X1                                                     | 68xxx PROCESSOR SOCKET        | 
 | 1   | MMUDIS          | JUMPER-2PTH        | 1X02                 | JP3                                                    | Jumper                        | 
 | 1   | SPI PORT        | PINHD-2X6          | 2X06                 | SPIPORT                                                | PIN HEADER                    | 
-| 1   | X24MHZ          | OSCILLATOR         | OSC_7X5MM            | OSC1                                                   | 24 Mhz llators                   |
+| 1   | X24MHZ          | OSCILLATOR         | OSC_7X5MM            | OSC1                                                   | 24 Mhz 3.3v oscillator                   |
 | 2   | XC9572XL-10VQ64   | XC9572XL-VQ64      | VQ64                 | XC9572XL(BUS), XC9572XL(RAM)                           |                               | 

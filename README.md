@@ -41,9 +41,9 @@ You need to connect the OVR and INT2 signals to the A500 header port as per the 
 
 ## What does the board look like
 
-![Image of Top of PCB](gerbers/tf530_rev2_top.jpg)
+![Image of Top of PCB](gerbers/AI530_rev3_top_2d.png)
 
-![Image of Bottom of PCB](gerbers/tf530_rev2_bottom.jpg)
+![Image of Bottom of PCB](gerbers/AI530_rev3_bottom_2d.png)
 
 ## The BOM 
 
